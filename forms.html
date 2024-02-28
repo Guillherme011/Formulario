@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criando meu formulário</title>
+    <title>COMENTÁRIO</title>
     <link rel="stylesheet" href="">
     <style>
         h1{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 48pt;
-            color: red;
+            color: black;
 
         }
     </style>
 </head>
 <body>
-    <h1>Criando meu formulário</h1>
-    <form action="ondevai.php" autocomplete="off">
+    <h1>Deixe um comentário</h1>
+    <form action="comentario.php" autocomplete="off">
         <p><label for="i">Nome:</label>
-            <input type="text" name="nome" id="i"> </p>
-        <p><label for="isobrenome">sobrenome:</label>
-            <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar"></p>
+            <p>
+            <input type="text" name="nome" id="i">
+            </p>
+            <label for="imail">E-mail:</label>
+            <p>
+            <input type="text" name="email" id="iemail">
+            </p>
+            <label for="iwebsite">Website:</label>
+            <p>
+            <input type="text" name="website" id="iwebsite">
+            </p>
+            <label for="icomentario">Comentário:</label>
+            <p>
+                <textarea name="message" rows="10" cols="30">
+                </textarea>
+            </p>
+                    
+        </p>
+        <p>Observação: Seu comentário será publicado após passar pelo moderador!</p>
+         <button type="submit">Enviar comentário</button>
     </form>       
     
 </body>
